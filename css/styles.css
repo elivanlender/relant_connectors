@@ -60,7 +60,7 @@ p{
 .menu a{
     display: inline-block;
     padding: 10px 30px;
-    font-size: 26px;
+    font-size: 20px;
     background-color: var(--red);
     margin: 0 10px;
     transition: .5s ease all;
@@ -74,7 +74,7 @@ p{
 }
 
 .connections{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .subtitulo{
@@ -87,7 +87,55 @@ p{
 
 .connections .titulo{
     width: 70%;
-    font-size: 16px;
+    font-size: 24px;
     display: inline-block;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
+}
+
+.productos{
+    background: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.productos.titulo{
+    width: 70%;
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.productos .producto{
+    position: relative;
+    width: 100%;
+}
+
+.productos .overlay{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--light-red);
+    overflow: hidden;
+    transition: .5s, ease;
+}
+
+.productos .producto:hover .overlay{
+    width: 100%;
+    opacity: 65%;
+}
+
+.productos .producto .overlay-texto{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: var(--white);
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
