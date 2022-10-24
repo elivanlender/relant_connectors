@@ -35,7 +35,7 @@ p{
 .contenido-header .texto{
     width: calc(100vw-20px);
     height: 50vh;
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 400;
     font-family: 'Noto Serif', serif;
     display: flex;
@@ -59,7 +59,7 @@ p{
 }
 .menu a{
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 10px;
     font-size: 20px;
     background-color: var(--red);
     margin: 0 10px;
@@ -78,7 +78,7 @@ p{
 }
 
 .subtitulo{
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Noto Serif', serif;
     font-weight: 400;
     z-index: 2;
@@ -138,4 +138,75 @@ p{
     overflow: hidden;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+}
+
+.separador{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/relant.png');
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 24px;
+    background-size: 100%;
+}
+
+.separador p {
+    height: 100%;
+    width: 100%;
+    color: var(--light-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;
+    padding: 5px;
+}
+
+.acerca-de{
+    margin-bottom: 20px;
+}
+
+#carousel{
+    margin-bottom: 40px;
+}
+
+#carousel img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.contacto{
+    margin-bottom: 60px;
+}
+
+.redes-sociales{
+    padding: 10px;
+    background-color: var(--light-red);
+}
+
+.redes-sociales img{
+    padding: 5px;
+    border-radius: 100%;
+    width: 40px;
+    transition: .3s ease all;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 992px) {
+    p{
+        font-size: 18px;
+    }    
+
+    .contenido-header .texto{
+        font-size: 40px;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+
 }
